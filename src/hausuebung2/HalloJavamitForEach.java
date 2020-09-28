@@ -5,10 +5,28 @@
  */
 package hausuebung2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author lreisinger18
  */
 public class HalloJavamitForEach {
-    
+
+    List<String> halloList = new ArrayList<>();
+
+    public void printHallo() {
+        halloList.add("Hallo");
+        for (String ausgeben : halloList) {
+            System.out.println(halloList);
+        }
+    }
+
+    public void printHalloLampda() {
+        halloList.add("Hallo!");
+        halloList.forEach((ausgeben) -> {
+            System.out.println(halloList);
+        });
+    }
 }
