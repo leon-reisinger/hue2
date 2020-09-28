@@ -7,6 +7,7 @@ package hausuebung2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  *
@@ -27,6 +28,11 @@ public class HalloJavamitForEach {
         halloList.add("Hallo!");
         halloList.forEach((ausgeben) -> {
             System.out.println(halloList);
-        });
+        }); 
+    }
+    
+    public void ConsumerPrint(){
+    Consumer<String> consumer = (String s) -> System.out.println(s);
+    
     }
 }
