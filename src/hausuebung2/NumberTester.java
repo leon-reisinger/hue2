@@ -9,6 +9,24 @@ package hausuebung2;
  *
  * @author lreisinger18
  */
-public class NumberTester {
+public class NumberTester implements NumberTest{
+    public NumberTester(String fileName)
+    {
+        
+    }
     
+    public void setOddEvenTester(NumberTest oddTester)
+    {
+    
+    }
+    
+    public void setPalindromeTester(NumberTest palindromeTester)
+    {
+    
+    }
+
+    @Override
+    public boolean testNumber(int number) {
+        return false;
+    }
 }
