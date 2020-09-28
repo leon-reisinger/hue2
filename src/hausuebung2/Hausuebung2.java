@@ -5,6 +5,8 @@
  */
 package hausuebung2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author lreisinger18
@@ -15,9 +17,14 @@ public class Hausuebung2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in, "Windows-1252");
         HalloJavamitForEach h = new HalloJavamitForEach();
-        h.printHallo();
-        h.printHalloLampda();
+        NumberTester t = new NumberTester("");
+        t.setOddEvenTester((var) -> (var%2 == 0));
+        t.setPrimeTester((n) -> );
+        t.setPalindromeTester((var3) -> (var3%2 == 0));
+        //h.printHallo();
+        //h.printHalloLampda();
     }
     
 }
