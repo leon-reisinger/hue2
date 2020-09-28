@@ -10,17 +10,29 @@ package hausuebung2;
  * @author lreisinger18
  */
 public class NumberTester implements NumberTest{
+    NumberTest oddTester;
+    NumberTest primeTester;
+    NumberTest palindromeTester;
+    String fileName;
+    
     public NumberTester(String fileName)
     {
-        
+        this.fileName = fileName;
     }
-    
-    public void setOddEvenTester(NumberTest oddTester)
-    {
-    
+
+    public void setOddEvenTester(NumberTest oddTester) {
+        this.oddTester = oddTester;
     }
-    
-    public void setPalindromeTester(NumberTest palindromeTester)
+
+    public void setPrimeTester(NumberTest primeTester) {
+        this.primeTester = primeTester;
+    }
+
+    public void setPalindromeTester(NumberTest palindromeTester) {
+        this.palindromeTester = palindromeTester;
+    }
+
+    public void testFile()
     {
     
     }
