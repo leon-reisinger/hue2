@@ -17,11 +17,12 @@ public class Hausuebung2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in, "Windows-1252");
         HalloJavamitForEach h = new HalloJavamitForEach();
         NumberTester t = new NumberTester("");
+        Prime p = new Prime();
+        
         t.setOddEvenTester((var) -> (var%2 == 0));
-        t.setPrimeTester((n) -> );
+        t.setPrimeTester((num) -> p.isPrime(num));
         t.setPalindromeTester((var3) -> (var3%2 == 0));
         //h.printHallo();
         //h.printHalloLampda();
